@@ -40,7 +40,7 @@ header .navbar ul {
   font-size: 25px;;
 }
 
-header .navbar li:hover {
+.nav-btn:hover {
   color:azure
 }
 
@@ -114,6 +114,7 @@ section {
 .about-text {
   display: flex;
   gap: 80px;
+  font-size: 20px;
 }
 
 .sticky-img {
@@ -129,7 +130,9 @@ section {
    padding-top: 20px;
   padding-right: 50px;
   padding-left: 50px;
-  background-color: rgb(212, 179, 60);
+  background-color: rgb(161, 172, 221);
+  border: solid;
+  margin-bottom: 80px;
 }
 
 #skills li {
@@ -148,6 +151,20 @@ section {
   padding-left: 50px;
   padding-right: 50px;
   background-color: bisque;
+  margin-bottom: 80px;
+  border: solid;
+}
+
+#experience li {
+  list-style: none;
+}
+
+.icons {
+  width: 3em;
+  height: 3em;
+}
+.job {
+  gap: 30px;
 }
 
 #education {
@@ -156,8 +173,21 @@ section {
   padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
-  background-color: rgb(192, 128, 51);
+  background-color: rgb(161, 172, 221);
+  Margin-bottom: 80px;
+  border: solid;
 }
+
+.job {
+  display: flex;
+  flex-direction: row;
+}
+
+.job-blurb {
+  display: flex;
+  flex-direction: column;
+}
+
 
 #education li {
   margin-bottom: 20px;
@@ -170,7 +200,7 @@ section {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 80px;
-  background-color: rgb(206, 142, 64);
+  background-color: rgb(203, 127, 52);
 }
 
 #contact {

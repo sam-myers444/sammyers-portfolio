@@ -7,6 +7,8 @@ import { GiSkills } from "react-icons/gi";
 import { MdPermIdentity } from "react-icons/md";
 import { GrContact } from "react-icons/gr";
 import { PiGearSixBold } from "react-icons/pi";
+import { FaMeta } from "react-icons/fa6";
+
 
 
 
@@ -95,12 +97,12 @@ function App() {
         <section id='experience'>
           <h1> <GoCheckCircle /> Experience</h1>
           <ul>
-            <li><strong>Support Specialist - Hustle</strong></li>
-            <p>Hustle is a peer-to-peer texting application. As a support specialist I diagnosed and resolved user technical issues, wrote and edited help articles, and used SQL to analyze data and deliver insights for problem solving. I enjoy working in support because I feel I have a natural ability to break down difficult concepts and explain them to users with empathy.</p>
-            <li><strong>Data Labeling Analyst - Meta</strong></li>
-            <p>At Meta, I utilize my critical thinking skills to analyze large data sets and provide clear annotation. I regularly provide feedback to team leads on ways to improve guidlines and project operations in order to promote consistency across projects.</p>
-            <li><strong>Lecturer + Curriculum Designer - Georgia State University</strong></li>
-            <p>In the Intensive English Program at Georgia State, I worked as a lecturer and curiculum designer. I designed and taught courses, modified curricula, mentored students and conducted meta-linguistic research. My time working as an educator, especially to ESL students, provided me with a keen ability to communicate concepts in the most accessible way.</p>
+            <li><div class='job'><img class='icons' src='./hustle_texting_logo.jpeg'></img><div class='job-blurb'><strong> Support Specialist - Hustle</strong>
+            <p>Hustle is a peer-to-peer texting application. As a support specialist I diagnosed and resolved user technical issues, wrote and edited help articles, and used SQL to analyze data and deliver insights for problem solving. I enjoy working in support because I feel I have a natural ability to break down difficult concepts and explain them to users with empathy.</p></div></div></li>
+            <li><div class='job'><img class='icons' src='./meta_logo.jpeg'></img><div class='job-blurb'><strong> Data Labeling Analyst - Meta</strong>
+            <p>At Meta, I utilize my critical thinking skills to analyze large data sets and provide clear annotation. I regularly provide feedback to team leads on ways to improve guidlines and project operations in order to promote consistency across projects.</p></div></div></li>
+            <li><div class='job'><img class='icons' src='./gsu-icon.jpeg'></img><div class='job-blurb'><strong> Lecturer + Curriculum Designer - Georgia State University</strong>
+            <p>In the Intensive English Program at Georgia State, I worked as a lecturer and curiculum designer. I designed and taught courses, modified curricula, mentored students and conducted meta-linguistic research. My time working as an educator, especially to ESL students, provided me with a keen ability to communicate concepts in the most accessible way.</p></div></div></li>
           </ul>
 
         </section>
