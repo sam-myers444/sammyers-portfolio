@@ -20,12 +20,12 @@ function App() {
       <header>
         <nav className='navbar'>
           <ul>
-            <li> <a class='nav-btn' href='#about'>About</a></li>
-            <li> <a class='nav-btn' href='#skills'>Skills</a></li>
-            <li> <a class='nav-btn' href='#experience'>Experience</a></li>
-            <li> <a class='nav-btn' href='#education'>Education</a></li>
-            <li> <a class='nav-btn' href='#projects'>Projects</a></li>
-            <li> <a class='nav-btn' href='#contact'>Contact</a></li>
+            <li> <a class='nav-btn' id='about2' href='#about'>About</a></li>
+            <li> <a class='nav-btn' id='skills2' href='#skills'>Skills</a></li>
+            <li> <a class='nav-btn' id='experience2' href='#experience'>Experience</a></li>
+            <li> <a class='nav-btn' id='education2' href='#education'>Education</a></li>
+            <li> <a class='nav-btn' id='projects2' href='#projects'>Projects</a></li>
+            <li> <a class='nav-btn' id='contact2' href='#contact'>Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -35,8 +35,8 @@ function App() {
         <section class='hero'>
           <div class='heroText'>
           <p class='greeting'>
-            Sam Myers <br />
-            Data   |   Design   |   Support  <br />
+            <p class='name'> Sam Myers </p>  
+            <p> Data   |   Design   |   Support  </p>
           </p>
           <div>
             <FaGithub class='socials'/>
@@ -44,11 +44,11 @@ function App() {
             </div>
           </div>
           <div class='heroImg'>
-          <img class='photo' src="./headshot3.png"></img>
+          <img class='photo' src="./headshot4.png"></img>
           </div>
         </section>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(161, 172, 221)" fillOpacity="1" d="M0,192L20,165.3C40,139,80,85,120,90.7C160,96,200,160,240,160C280,160,320,96,360,74.7C400,53,440,75,480,90.7C520,107,560,117,600,122.7C640,128,680,128,720,112C760,96,800,64,840,64C880,64,920,96,960,128C1000,160,1040,192,1080,176C1120,160,1160,96,1200,80C1240,64,1280,96,1320,144C1360,192,1400,256,1420,288L1440,320L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(246, 223, 225)" fillOpacity="1" d="M0,192L20,165.3C40,139,80,85,120,90.7C160,96,200,160,240,160C280,160,320,96,360,74.7C400,53,440,75,480,90.7C520,107,560,117,600,122.7C640,128,680,128,720,112C760,96,800,64,840,64C880,64,920,96,960,128C1000,160,1040,192,1080,176C1120,160,1160,96,1200,80C1240,64,1280,96,1320,144C1360,192,1400,256,1420,288L1440,320L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
 
         <section id='about'>
           <h1><MdPermIdentity /> About Me </h1>
@@ -68,7 +68,7 @@ function App() {
         </section>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="rgb(237, 194, 78)" fillOpacity="1" d="M0,320L21.8,298.7C43.6,277,87,235,131,208C174.5,181,218,171,262,181.3C305.5,192,349,224,393,218.7C436.4,213,480,171,524,138.7C567.3,107,611,85,655,80C698.2,75,742,85,785,80C829.1,75,873,53,916,69.3C960,85,1004,139,1047,165.3C1090.9,192,1135,192,1178,202.7C1221.8,213,1265,235,1309,234.7C1352.7,235,1396,213,1418,202.7L1440,192L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path>
+  <path fill="rgb(211, 199, 218)" fillOpacity="1" d="M0,320L21.8,298.7C43.6,277,87,235,131,208C174.5,181,218,171,262,181.3C305.5,192,349,224,393,218.7C436.4,213,480,171,524,138.7C567.3,107,611,85,655,80C698.2,75,742,85,785,80C829.1,75,873,53,916,69.3C960,85,1004,139,1047,165.3C1090.9,192,1135,192,1178,202.7C1221.8,213,1265,235,1309,234.7C1352.7,235,1396,213,1418,202.7L1440,192L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></path>
 </svg>
 
         <section id='skills'>
@@ -117,11 +117,11 @@ function App() {
         </section>
 
         <section id='projects'>
-          <h1><PiGearSixBold /> Projects</h1>
+          <h1><PiGearSixBold /> Projects (image carousel)</h1>
           <ul>
             <li><strong>Rock, Paper, Scissors</strong></li>
             <li><strong>BattleShip</strong></li>
-            <li><strong>Image Carousal</strong></li>
+            <li><strong>Image Carousel</strong></li>
             <li><strong>Tic Tac Toe</strong></li>
             <li><strong>Weather App</strong></li>
           </ul>
