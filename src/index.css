@@ -35,7 +35,7 @@ header .navbar ul {
   display: flex;
   justify-content: right;
   align-items: center;
-  gap: 22px;
+  gap: 35px;
   padding-right: 200px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -75,6 +75,7 @@ section {
   background-position: center;
   opacity: 0.5;
   z-index: 0;
+  pointer-events: none;
 }
 
 .hero > * {
@@ -225,6 +226,24 @@ section {
   border: solid;
 }
 
+.carousel {
+  max-width: 300px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-btn {
+  position: relative;
+  max-height: 4em;
+  align-items: center;
+  padding: 3px;
+}
+
 #contact {
   display: flex;
   flex-direction: column;
@@ -235,6 +254,10 @@ section {
   padding-bottom: 80px;
   border: solid;
   Margin-bottom: 80px;
+}
+
+.slide img {
+  max-width: 100px;
 }
 
 

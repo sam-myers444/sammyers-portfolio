@@ -8,6 +8,12 @@ import { MdPermIdentity } from "react-icons/md";
 import { GrContact } from "react-icons/gr";
 import { PiGearSixBold } from "react-icons/pi";
 import { FaMeta } from "react-icons/fa6";
+import { GoDot } from "react-icons/go";
+import React, { useState } from 'react';
+import img1 from './img1.jpeg';
+import img2 from './img2.jpeg';
+import img3 from './img3.jpeg';
+
 
 
 
@@ -15,17 +21,31 @@ import { FaMeta } from "react-icons/fa6";
 
 
 function App() {
+
+const carousel = [img1, img2, img3];
+
+const [currentIndex, setCurrentIndex] = useState(2);
+
+function nextSlide() {
+  setCurrentIndex((currentIndex + 1) % carousel.length);
+  }
+
+function previousSlide() {
+  setCurrentIndex((currentIndex - 1 + carousel.length) % carousel.length);
+}
+
+
   return (
     <>
       <header>
         <nav className='navbar'>
           <ul>
-            <li> <a class='nav-btn' id='about2' href='#about'>About</a></li>
-            <li> <a class='nav-btn' id='skills2' href='#skills'>Skills</a></li>
-            <li> <a class='nav-btn' id='experience2' href='#experience'>Experience</a></li>
-            <li> <a class='nav-btn' id='education2' href='#education'>Education</a></li>
-            <li> <a class='nav-btn' id='projects2' href='#projects'>Projects</a></li>
-            <li> <a class='nav-btn' id='contact2' href='#contact'>Contact</a></li>
+            <li> <a class='nav-btn' id='about2' href='#about'>about</a></li>
+            <li> <a class='nav-btn' id='skills2' href='#skills'>skills</a></li>
+            <li> <a class='nav-btn' id='experience2' href='#experience'>experience</a></li>
+            <li> <a class='nav-btn' id='education2' href='#education'>education</a></li>
+            <li> <a class='nav-btn' id='projects2' href='#projects'>projects</a></li>
+            <li> <a class='nav-btn' id='contact2' href='#contact'>contact</a></li>
           </ul>
         </nav>
       </header>
@@ -35,12 +55,16 @@ function App() {
         <section class='hero'>
           <div class='heroText'>
           <p class='greeting'>
-            <p class='name'> Sam Myers </p>  
-            <p> Data   |   Design   |   Support  </p>
+            <p class='name'> sam myers </p>  
+            <p> data   |   design   |   support  </p>
           </p>
           <div>
+            <a href='https://github.com/sam-myers444'>
             <FaGithub class='socials'/>
+            </a>
+            <a href='https://www.linkedin.com/in/sam-myers-6011911b3/'>
             <FaLinkedin class='socials'/>
+            </a>
             </div>
           </div>
           <div class='heroImg'>
@@ -51,7 +75,7 @@ function App() {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(246, 223, 225)" fillOpacity="1" d="M0,192L20,165.3C40,139,80,85,120,90.7C160,96,200,160,240,160C280,160,320,96,360,74.7C400,53,440,75,480,90.7C520,107,560,117,600,122.7C640,128,680,128,720,112C760,96,800,64,840,64C880,64,920,96,960,128C1000,160,1040,192,1080,176C1120,160,1160,96,1200,80C1240,64,1280,96,1320,144C1360,192,1400,256,1420,288L1440,320L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"></path></svg>
 
         <section id='about'>
-          <h1><MdPermIdentity /> About Me </h1>
+          <h1><MdPermIdentity /> about me </h1>
           <div class='about-text'>
           <p>
             I’m a technical support and data operations professional with a background spanning AI data workflows, SaaS support, and higher education. I enjoy building thoughtful systems, solving complex problems, and making technology feel more intuitive and human.
@@ -59,7 +83,7 @@ function App() {
             I’m currently focused on growing at the intersection of support, systems, and frontend development.<br /> <br />
 
           
-               In my free time, I design and sew my own clothes and have participated in several fashion shows. I love experimenting with new textiles and unlocking whatever interesting qualities they may bring to the garments I make. I am also a distance and trail runner, and you can catch me every fall running the Squam Ridge Race in the White Mountains.
+               In my free time, I design and sew my own clothes. I love experimenting with new textiles and unlocking whatever interesting qualities they may bring to the garments I make. I am also a distance and trail runner, and you can catch me every fall running the Squam Ridge Race in the White Mountains.
           </p>
           <div class='sticky'>
             <img class='sticky-img' src='./sticky.jpeg'></img>
@@ -72,7 +96,7 @@ function App() {
 </svg>
 
         <section id='skills'>
-          <h1><GiSkills /> Skills</h1>
+          <h1><GiSkills /> skills</h1>
           <p>
             <ul>
             <li><strong>Client Support:</strong> I am passionate about building and maintaining strong client relationships through thoughtful, compassionate, and accessible support.</li>
@@ -95,7 +119,7 @@ function App() {
         </section>
 
         <section id='experience'>
-          <h1> <GoCheckCircle /> Experience</h1>
+          <h1> <GoCheckCircle /> experience</h1>
           <ul>
             <li><div class='job'><img class='icons' src='./hustle_texting_logo.jpeg'></img><div class='job-blurb'><strong> Support Specialist - Hustle</strong>
             <p>Hustle is a peer-to-peer texting application. As a support specialist I diagnosed and resolved user technical issues, wrote and edited help articles, and used SQL to analyze data and deliver insights for problem solving. I enjoy working in support because I feel I have a natural ability to break down difficult concepts and explain them to users with empathy.</p></div></div></li>
@@ -108,7 +132,7 @@ function App() {
         </section>
 
         <section id='education'>
-          <h1> <MdCastForEducation /> Education
+          <h1> <MdCastForEducation /> education
 </h1>
           <ul>
             <li>MA in Applied Linguistics - Georgia State University</li>
@@ -117,18 +141,17 @@ function App() {
         </section>
 
         <section id='projects'>
-          <h1><PiGearSixBold /> Projects (image carousel)</h1>
-          <ul>
-            <li><strong>Rock, Paper, Scissors</strong></li>
-            <li><strong>BattleShip</strong></li>
-            <li><strong>Image Carousel</strong></li>
-            <li><strong>Tic Tac Toe</strong></li>
-            <li><strong>Weather App</strong></li>
-          </ul>
-          
+          <h1><PiGearSixBold /> projects </h1>
+          <div className='carousel-wrapper'>
+            <button className='slide-btn' onClick={previousSlide}>Back</button>
+            <img 
+            className='carousel' src={carousel[currentIndex]} alt="project screenshot"
+            />
+            <button className='slide-btn' onClick={nextSlide}>Next</button>
+            </div>
         </section>
         <section id='contact'>
-          <h1><GrContact /> Contact</h1>
+          <h1><GrContact /> contact</h1>
           <form action="https://formspree.io/f/mqejnaoy" method="POST">
           <label for="fname">First Name</label> <br />
           <input type="text" id='fname' name='fname'></input><br />
